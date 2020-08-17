@@ -322,6 +322,15 @@
             "en": "(Little FBK)I'm dead",
             "ja": "(ちびっ狐)しんじゃだ"
           }
+        },  
+        {
+          "name": "f-151",
+          "path": "f-151.mp3",
+          "description": {
+            "zh": "啊 好疼啊噗喵",
+            "en": "Oh!It’s so hurt!",
+            "ja": "あっ痛いよぷにゃ"
+          }
         }
       ]
     },
