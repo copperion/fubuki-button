@@ -112,6 +112,9 @@ export default {
       runtimeCaching: [
         {
           urlPattern: 'https://cdn.jsdelivr.net/gh/oruyanke/fubuki-button@master/static/voices/*'
+        },
+        {
+          urlPattern: 'https://emoji.lonelyion.com/svg/*'
         }
       ]
     }
@@ -165,6 +168,8 @@ export default {
       }
     }
   },
+  // This hook is designed for Fubuki-Button only
+  // Remove this code in other fork of button sites
   hooks: {
     generate: {
       // eslint-disable-next-line no-unused-vars

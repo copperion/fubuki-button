@@ -2,11 +2,11 @@
   <v-layout>
     <v-flex>
       <v-card>
-        <v-card-title>{{ $t('links.title') }}</v-card-title>
+        <v-card-title>{{ $t('site.links') }}</v-card-title>
         <v-card-text>
           <a v-for="item in links" :key="item.title" :href="item.url" target="_blank">
-            <voice-btn :large="true" class="link-button white--text" :class="item.color_class" :emoji="item.emoji">
-              {{ item.title }}
+            <voice-btn :large="true" class="link-button white--text" :class="item.color" :emoji="item.emoji">
+              {{ item.tr[current_locale] }}
             </voice-btn>
           </a>
         </v-card-text>
@@ -21,106 +21,50 @@ export default {
   components: {
     VoiceBtn
   },
+  data() {
+    return {
+      links: []
+    };
+  },
   computed: {
-    links() {
-      return [
-        {
-          title: this.$t('links.mio'),
-          url: 'https://ookamimio.org',
-          emoji: '🌲',
-          color_class: 'grey darken-3'
-        },
-        {
-          title: this.$t('links.korone'),
-          url: 'https://korone.icu',
-          emoji: '🥐',
-          color_class: 'brown darken-1'
-        },
-        {
-          title: this.$t('links.okayu'),
-          url: 'https://okayu.icu',
-          emoji: '🍙',
-          color_class: 'purple lighten-1'
-        },
-        {
-          title: this.$t('links.matsuri'),
-          url: 'https://natsuiromatsuri.moe/',
-          emoji: '🏮',
-          color_class: 'amber darken-2'
-        },
-        {
-          title: this.$t('links.peko'),
-          url: 'https://peko.top',
-          emoji: '🥕',
-          color_class: 'orange darken-1'
-        },
-        {
-          title: this.$t('links.aqua'),
-          url: 'https://aquaminato.moe',
-          emoji: '⚓',
-          color_class: 'pink accent-1'
-        },
-        {
-          title: this.$t('links.ayame'),
-          url: 'https://nakiriayame.moe/',
-          emoji: '😈',
-          color_class: 'red darken-1'
-        },
-        {
-          title: this.$t('links.suisei'),
-          url: 'https://suisei.moe/',
-          emoji: '🌠',
-          color_class: 'indigo darken-1'
-        },
-        {
-          title: this.$t('links.towa'),
-          url: 'https://towa.live/',
-          emoji: '👾',
-          color_class: 'purple lighten-3'
-        },
-        {
-          title: this.$t('links.ahoy'),
-          url: 'http://www.ahoybutton.art/',
-          emoji: '🏴‍☠️',
-          color_class: 'red accent-2'
-        },
-        {
-          title: this.$t('links.echo'),
-          url: 'https://sepeach.com/',
-          emoji: '🍑',
-          color_class: 'pink lighten-2'
-        },
-        {
-          title: this.$t('links.artia'),
-          url: 'https://artia.moe/',
-          emoji: '❄️',
-          color_class: 'light-blue lighten-2'
-        },
-        {
-          title: this.$t('links.sasa'),
-          url: 'https://sasa-kids.com',
-          emoji: '🎋',
-          color_class: 'pink lighten-3'
-        },
-        {
-          title: this.$t('links.bell'),
-          url: 'https://bell.colter.top/',
-          emoji: '🔔',
-          color_class: 'pink lighten-4'
-        },
-        {
-          title: this.$t('links.vm'),
-          url: 'https://vtbmusic.com',
-          emoji: '🎵',
-          color_class: 'cyan accent-4'
-        },
-        {
-          title: this.$t('links.collection'),
-          url: 'https://vtbbtn.org',
-          emoji: '📚',
-          color_class: 'accent'
-        }
-      ];
+    current_locale() {
+      return this.$i18n.locale;
+    }
+  },
+  mounted() {
+    const api = '//' + window.location.host + '/links.json';
+    this.$axios
+      .get(api)
+      .then(res => {
+        this.links = this.shuffle(
+          res.data.filter(function (el) {
+            return el.title !== 'fbk';
+          })
+        );
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  },
+  methods: {
+    shuffle(array) {
+      //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+      let currentIndex = array.length,
+        temporaryValue,
+        randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+      return array;
     }
   }
 };

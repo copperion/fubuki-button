@@ -28,7 +28,7 @@ Related Links:
 
 If you don't know how to participate on GitHub, you can directly send voice clips or suggestions to [voice@fubuki.moe](mailto:voice@fubuki.moe) with title, content and your social ID(Twitter, Bilibili or so on). We will add your ID to the contributors list below.
 
-Also you can submit [Issues](https://github.com/copperion/fubuki-button/issues) to upload audio clips.
+Also you can submit [Issues](https://github.com/oruyanke/fubuki-button/issues) to upload audio clips.
 
 If you can do some programming, just fork this repository and modify it. After you have done, just open a Pull Request. For detailed information, please read below.
 

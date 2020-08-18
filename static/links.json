@@ -1,0 +1,222 @@
+[
+  {
+    "title": "fbk",
+    "tr": {
+      "zh": "狐按钮",
+      "en": "Fubuki Button",
+      "ja": "フブキボタン"
+    },
+    "url": "https://fubuki.moe",
+    "emoji": "\uD83C\uDF3D",
+    "color": "blue lighten-2"
+  },
+  {
+    "title": "mio",
+    "tr": {
+      "zh": "狼按钮",
+      "en": "Mio Button",
+      "ja": "ミオボタン"
+    },
+    "url": "https://ookamimio.org",
+    "emoji": "\uD83C\uDF32",
+    "color": "grey darken-3"
+  },
+  {
+    "title": "okayu",
+    "tr": {
+      "zh": "粥按钮",
+      "en": "Okayu Button",
+      "ja": "おかゆボタン"
+    },
+    "url": "https://okayu.icu",
+    "emoji": "\uD83C\uDF59",
+    "color": "purple lighten-1"
+  },
+  {
+    "title": "korone",
+    "tr": {
+      "zh": "狗按钮",
+      "en": "Korone Button",
+      "ja": "ころねボタン"
+    },
+    "url": "https://korone.icu",
+    "emoji": "\uD83E\uDD50",
+    "color": "brown darken-1"
+  },
+  {
+    "title": "kanata",
+    "tr": {
+      "zh": "彼方碳按钮",
+      "en": "Kanata Button",
+      "ja": "かなたんボタン"
+    },
+    "url": "https://kanata.club",
+    "emoji": "\uD83D\uDCAB",
+    "color": "indigo lighten-2"
+  },
+  {
+    "title": "peko",
+    "tr": {
+      "zh": "Peko按钮",
+      "en": "Peko Button",
+      "ja": "ぺこらボタン"
+    },
+    "url": "https://peko.top",
+    "emoji": "\uD83E\uDD55",
+    "color": "indigo lighten-3"
+  },
+  {
+    "title": "miko",
+    "tr": {
+      "zh": "樱按钮",
+      "en": "Miko Button",
+      "ja": "みこボタン"
+    },
+    "url": "https://sakuramiko.org",
+    "emoji": "\uD83C\uDF38",
+    "color": "red accent-1"
+  },
+  {
+    "title": "ayame",
+    "tr": {
+      "zh": "余按钮",
+      "en": "Ayame Button",
+      "ja": "あやめボタン"
+    },
+    "url": "https://nakiriayame.moe",
+    "emoji": "\uD83D\uDE08",
+    "color": "pink accent-1"
+  },
+  {
+    "title": "matsuri",
+    "tr": {
+      "zh": "祭按钮",
+      "en": "Matsuri Button",
+      "ja": "まつりボタン"
+    },
+    "url": "https://natsuiromatsuri.moe",
+    "emoji": "\uD83C\uDFEE",
+    "color": "amber darken-2"
+  },
+  {
+    "title": "suisei",
+    "tr": {
+      "zh": "星按钮",
+      "en": "Suisei Button",
+      "ja": "すいせいボタン"
+    },
+    "url": "https://suisei.moe",
+    "emoji": "\uD83C\uDF20",
+    "color": "indigo darken-1"
+  },
+  {
+    "title": "rushia",
+    "tr": {
+      "zh": "粽按钮",
+      "en": "Rushia Button",
+      "ja": "るしあボタン"
+    },
+    "url": "https://rushia.moe",
+    "emoji": "\uD83E\uDD8B",
+    "color": "teal lighten-3"
+  },
+  {
+    "title": "towa",
+    "tr": {
+      "zh": "Towa按钮",
+      "en": "Towa Button",
+      "ja": "トワボタン"
+    },
+    "url": "https://towa.live",
+    "emoji": "\uD83D\uDC7E",
+    "color": "purple lighten-3"
+  },
+  {
+    "title": "echo",
+    "tr": {
+      "zh": "桃按钮",
+      "en": "Echo Button",
+      "ja": "エコーボタン"
+    },
+    "url": "http://sepeach.com",
+    "emoji": "\uD83C\uDF51",
+    "color": "pink lighten-4"
+  },
+  {
+    "title": "marine",
+    "tr": {
+      "zh": "船长按钮",
+      "en": "Marine's Button",
+      "ja": "マリンボタン"
+    },
+    "url": "http://www.ahoybutton.art",
+    "emoji": "🏴‍☠️",
+    "color": "red accent-2"
+  },
+  {
+    "title": "artia",
+    "tr": {
+      "zh": "阿媂娅按钮",
+      "en": "Artia Button",
+      "ja": "アティアボタン"
+    },
+    "url": "https://artia.moe",
+    "emoji": "❄️",
+    "color": "purple darken-2"
+  },
+  {
+    "title": "watame",
+    "tr": {
+      "zh": "WTM按钮",
+      "en": "Watame Button",
+      "ja": "わためボタン"
+    },
+    "url": "https://www.watame.moe",
+    "emoji": "\uD83D\uDC0F",
+    "color": "yellow accent-4"
+  },
+  {
+    "title": "sasa",
+    "tr": {
+      "zh": "笹按钮(笹木咲)",
+      "en": "Sasaki Saku Button",
+      "ja": "ささボタン(笹木咲)"
+    },
+    "url": "https://sasa-kids.com/",
+    "emoji": "\uD83C\uDF8B",
+    "color": "pink lighten-3"
+  },
+  {
+    "title": "bell",
+    "tr": {
+      "zh": "Bell按钮",
+      "en": "Bell Button",
+      "ja": "猫芒ベルボタン"
+    },
+    "url": "https://www.vividbtn.top/bell",
+    "emoji": "\uD83D\uDD14",
+    "color": "pink lighten-4"
+  },
+  {
+    "title": "vm",
+    "tr": {
+      "zh": "VTuber Music",
+      "en": "VTuber Music",
+      "ja": "VTuber Music"
+    },
+    "url": "https://vtbmusic.com",
+    "emoji": "\uD83C\uDFB5",
+    "color": "cyan accent-4"
+  },
+  {
+  "title": "collection",
+  "tr": {
+    "zh": "VTuber 按钮合集",
+    "en": "VTuber Buttons Collection",
+    "ja": "VTuberの音声ボタンコレクション"
+  },
+  "url": "https://vtbbtn.org/",
+  "emoji": "\uD83D\uDCDA",
+  "color": "accent"
+}
+]

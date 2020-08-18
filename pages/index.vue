@@ -83,7 +83,7 @@
             </div>
           </div>
           <div v-if="lives.length === 0 && upcoming_lives.length === 0">
-            <p>{{ $t('live.no_schedule') }}</p>
+            <p>{{ lives_loading ? $t('live.loading') : $t('live.no_schedule') }}</p>
           </div>
           <div class="notification-board" v-html="$md.render($t('live.notification'))"></div>
         </v-card-text>

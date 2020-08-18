@@ -3,13 +3,13 @@
     <template v-slot="{ hover }">
       <v-btn
         class="ma-1 pa-2 vo-btn"
-        :class="dark_text"
+        :class="[dark_text]"
         :elevation="hover ? 6 : 2"
         rounded
         height="max-content"
         min-height="36px"
-        :style="{ '--hover-content': '\'' + emoji + '\'' }"
         :large="large"
+        :style="{ '--hover-content': 'url(\'' + emoji_url + '\')' }"
       >
         <div>
           <slot></slot>
@@ -19,6 +19,8 @@
   </v-hover>
 </template>
 <script>
+import twemoji from 'twemoji';
+
 export default {
   name: 'VoiceBtn',
   props: {
@@ -31,11 +33,26 @@ export default {
       type: Boolean
     }
   },
+  data() {
+    return {
+      twe_para: {
+        base: 'https://emoji.lonelyion.com',
+        folder: '/svg',
+        ext: '.svg'
+      }
+    };
+  },
   computed: {
     dark_text() {
       return {
         'grey--text text--lighten-2': this.$vuetify.theme.dark
       };
+    },
+    emoji_url() {
+      let reg = /<img[^>]+src="?([^"\s]+)"?\s*\/>/g;
+      let str = twemoji.parse(this.emoji, this.twe_para);
+      let match = reg.exec(str);
+      return match[1];
     }
   }
 };
@@ -68,6 +85,8 @@ $nonlinear-transition: cubic-bezier(0.25, 0.8, 0.5, 1);
   right: -20px;
   opacity: 0;
   transition: 0.5s $nonlinear-transition;
+  width: 20px;
+  height: 20px;
 }
 
 .vo-btn:hover div {

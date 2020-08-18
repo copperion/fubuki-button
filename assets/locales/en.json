@@ -3,6 +3,7 @@
     "title": "Fubuki Button",
     "description": "Brand-new voice buttons for Shirakami Fubuki, we are aimming at building a comprehensive project related to Shirakami Fubuki.\n",
     "index": "Home",
+    "links": "Links",
     "about": "About",
     "switch_dark_mode": "Switch Dark Mode",
     "switch_language": "Switch Language",
@@ -16,6 +17,7 @@
     "activity": "Live Board",
     "schedule": "Scheduled at ",
     "on_air": "LIVE NOW",
+    "loading": "Fetching live data...",
     "no_schedule": "No scheduled live is found.",
     "notification": "Fubuki Button's website URL has changed to fubuki.moe"
   },
@@ -35,24 +37,5 @@
     "title": "Development Mode",
     "desc": "Dev mode may contains errors or vulnerability. We absolutely DO NOT guarantee any support and warranty. The actual new features are subject to the official version being launched.",
     "to_stable": "Return to Official version"
-  },
-  "links": {
-    "title": "Links",
-    "vm": "VTuber Music",
-    "collection": "VTuber Buttons Collection",
-    "mio": "Mio Button",
-    "korone": "Korone Button",
-    "okayu": "Okayu Button",
-    "peko": "Pekora Button",
-    "aqua": "Aqua Button",
-    "matsuri": "Matsuri Button",
-    "ayame": "Ayame Button",
-    "suisei": "Suisei Button",
-    "towa": "Towa Button",
-    "echo": "Echo Button",
-    "sasa": "Sasa Button(Sasaki Saku)",
-    "ahoy": "Marine Button",
-    "artia": "Artia Button",
-    "bell": "Bell Button(Bell Nekonogi)"
   }
 }

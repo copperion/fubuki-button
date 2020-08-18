@@ -64,7 +64,7 @@
             <v-icon>{{ icons.play_list_star }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>{{ $t('links.title') }}</v-list-item-title>
+            <v-list-item-title>{{ $t('site.links') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item dense to="/about" router exact>

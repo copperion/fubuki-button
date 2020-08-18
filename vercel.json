@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "src": "/voices/(.*)",
+      "headers": { "cache-control": "public, max-age=31536000" },
+      "continue": "true"
+    },
+    {
+      "src": "/img/(.*)",
+      "headers": { "cache-control": "public, max-age=302400" },
+      "continue": "true"
+    },
+    {
+      "src": "/links.json",
+      "headers": { "cache-control": "public, max-age=86400" },
+      "continue": "true"
+    }
+  ]
+}
